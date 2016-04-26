@@ -5,7 +5,7 @@ Home: https://bitbucket.org/mrabarnett/mrab-regex
 
 Package license: Python-2.0
 
-Feedstock license: BSD
+Feedstock license: BSD 3-Clause
 
 Summary: Alternative regular expression module, to replace re.
 
