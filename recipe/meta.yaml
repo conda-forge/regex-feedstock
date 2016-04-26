@@ -1,11 +1,13 @@
+{% set version = "2016.04.25" %}
+
 package:
     name: regex
-    version: 2016.03.31
+    version: {{ version }}
 
 source:
-    fn: regex-2016.03.31.tar.gz
-    url: https://pypi.python.org/packages/source/r/regex/regex-2016.03.31.tar.gz
-    md5: 634f02965154a9dc9b1b61f1e44808f3
+    fn: regex-{{ version }}.tar.gz
+    url: https://pypi.python.org/packages/64/bf/585f12c0effb356a43ebc56d0129302e64e43668578e1ec8081136e29c00/regex-{{ version }}.tar.gz
+    md5: 2531484af7428826a89f9e0147ed9633
 
 build:
     number: 0
