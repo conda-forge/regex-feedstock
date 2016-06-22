@@ -1,4 +1,4 @@
-{% set version = "2016.05.15" %}
+{% set version = "2016.06.19" %}
 
 package:
     name: regex
@@ -7,7 +7,7 @@ package:
 source:
     fn: regex-{{ version }}.tar.gz
     url: https://pypi.io/packages/source/r/regex/regex-{{ version }}.tar.gz
-    md5: c66cb973c79c430928071920972d4bd4
+    md5: d10f923cdda1a6cb674bbecc9440f42b
 
 build:
     number: 0
@@ -30,5 +30,5 @@ about:
 
 extra:
     recipe-maintainers:
-        - ocefpaf
         - kwilcox
+        - ocefpaf
