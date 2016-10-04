@@ -1,4 +1,4 @@
-{% set version = "2016.08.27" %}
+{% set version = "2016.09.22" %}
 
 package:
     name: regex
@@ -7,7 +7,7 @@ package:
 source:
     fn: regex-{{ version }}.tar.gz
     url: https://pypi.io/packages/source/r/regex/regex-{{ version }}.tar.gz
-    sha256: 53b97d85ebcbae7536dc24e798da114551a50de925a565ca14df17e6aa562389
+    sha256: 5831c142d9a5b2447e0c5ee9a77b2aaee2ecbbff1025715ec3c6f6c7fc9b682b
 
 build:
     number: 0
@@ -26,7 +26,7 @@ test:
 about:
     home: https://bitbucket.org/mrabarnett/mrab-regex
     license: Python-2.0
-    summary: Alternative regular expression module, to replace re.
+    summary: 'Alternative regular expression module, to replace re.'
 
 extra:
     recipe-maintainers:
