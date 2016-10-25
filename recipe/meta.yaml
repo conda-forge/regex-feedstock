@@ -1,34 +1,34 @@
-{% set version = "2016.09.22" %}
+{% set version = "2016.10.22" %}
 
 package:
-    name: regex
-    version: {{ version }}
+  name: regex
+  version: {{ version }}
 
 source:
-    fn: regex-{{ version }}.tar.gz
-    url: https://pypi.io/packages/source/r/regex/regex-{{ version }}.tar.gz
-    sha256: 5831c142d9a5b2447e0c5ee9a77b2aaee2ecbbff1025715ec3c6f6c7fc9b682b
+  fn: regex-{{ version }}.tar.gz
+  url: https://pypi.io/packages/source/r/regex/regex-{{ version }}.tar.gz
+  sha256: 4415b5b5408ad36ad73ee6c27a0ac01880d460f69014671b719a10320322e4d5
 
 build:
-    number: 0
-    script: python setup.py install
+  number: 0
+  script: python setup.py install
 
 requirements:
-    build:
-        - python
-    run:
-        - python
+  build:
+    - python
+  run:
+    - python
 
 test:
-    imports:
-        - regex
+  imports:
+    - regex
 
 about:
-    home: https://bitbucket.org/mrabarnett/mrab-regex
-    license: Python-2.0
-    summary: 'Alternative regular expression module, to replace re.'
+  home: https://bitbucket.org/mrabarnett/mrab-regex
+  license: Python-2.0
+  summary: 'Alternative regular expression module, to replace re.'
 
 extra:
-    recipe-maintainers:
-        - kwilcox
-        - ocefpaf
+  recipe-maintainers:
+    - kwilcox
+    - ocefpaf
