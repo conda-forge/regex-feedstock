@@ -14,7 +14,9 @@ Summary: Alternative regular expression module, to replace re.
 Current build status
 ====================
 
-All platforms: [![Circle CI](https://circleci.com/gh/conda-forge/regex-feedstock.svg?style=shield)](https://circleci.com/gh/conda-forge/regex-feedstock)
+Linux: [![Circle CI](https://circleci.com/gh/conda-forge/regex-feedstock.svg?style=shield)](https://circleci.com/gh/conda-forge/regex-feedstock)
+OSX: [![TravisCI](https://travis-ci.org/conda-forge/regex-feedstock.svg?branch=master)](https://travis-ci.org/conda-forge/regex-feedstock)
+Windows: [![AppVeyor](https://ci.appveyor.com/api/projects/status/github/conda-forge/regex-feedstock?svg=True)](https://ci.appveyor.com/project/conda-forge/regex-feedstock/branch/master)
 
 Current release info
 ====================
