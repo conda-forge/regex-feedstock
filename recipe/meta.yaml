@@ -28,6 +28,7 @@ test:
 about:
   home: https://bitbucket.org/mrabarnett/mrab-regex
   license: Python-2.0
+  license_family: PSF
   summary: 'Alternative regular expression module, to replace re.'
 
 extra:
