@@ -14,14 +14,16 @@ Summary: Alternative regular expression module, to replace re.
 Current build status
 ====================
 
-Linux: [![Circle CI](https://circleci.com/gh/conda-forge/regex-feedstock.svg?style=shield)](https://circleci.com/gh/conda-forge/regex-feedstock)
-OSX: [![TravisCI](https://travis-ci.org/conda-forge/regex-feedstock.svg?branch=master)](https://travis-ci.org/conda-forge/regex-feedstock)
-Windows: [![AppVeyor](https://ci.appveyor.com/api/projects/status/github/conda-forge/regex-feedstock?svg=True)](https://ci.appveyor.com/project/conda-forge/regex-feedstock/branch/master)
+[![Linux](https://img.shields.io/circleci/project/github/conda-forge/regex-feedstock/master.svg?label=Linux)](https://circleci.com/gh/conda-forge/regex-feedstock)
+[![OSX](https://img.shields.io/travis/conda-forge/regex-feedstock/master.svg?label=macOS)](https://travis-ci.org/conda-forge/regex-feedstock)
+[![Windows](https://img.shields.io/appveyor/ci/conda-forge/regex-feedstock/master.svg?label=Windows)](https://ci.appveyor.com/project/conda-forge/regex-feedstock/branch/master)
 
 Current release info
 ====================
-Version: [![Anaconda-Server Badge](https://anaconda.org/conda-forge/regex/badges/version.svg)](https://anaconda.org/conda-forge/regex)
-Downloads: [![Anaconda-Server Badge](https://anaconda.org/conda-forge/regex/badges/downloads.svg)](https://anaconda.org/conda-forge/regex)
+
+| Name | Downloads | Version | Platforms |
+| --- | --- | --- | --- |
+| [![Conda Recipe](https://img.shields.io/badge/recipe-regex-green.svg)](https://anaconda.org/conda-forge/regex) | [![Conda Downloads](https://img.shields.io/conda/dn/conda-forge/regex.svg)](https://anaconda.org/conda-forge/regex) | [![Conda Version](https://img.shields.io/conda/vn/conda-forge/regex.svg)](https://anaconda.org/conda-forge/regex) | [![Conda Platforms](https://img.shields.io/conda/pn/conda-forge/regex.svg)](https://anaconda.org/conda-forge/regex) |
 
 Installing regex
 ================
