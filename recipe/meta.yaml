@@ -13,11 +13,11 @@ build:
   script: python -m pip install --no-deps --ignore-installed .
 
 requirements:
+  build:
+    - {{ compiler('c') }}
   host:
     - python
     - pip
-  build:
-    - {{ compiler('c') }}
   run:
     - python
 
