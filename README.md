@@ -11,7 +11,7 @@ Package license: Python-2.0
 
 Feedstock license: BSD 3-Clause
 
-Summary: Alternative regular expression module, to replace re.
+Summary: Alternative regular expression module, to replace re
 
 
 
