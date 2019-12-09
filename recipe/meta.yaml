@@ -1,4 +1,4 @@
-{% set version = "2019.11.1" %}
+{% set version = "2019.12.9" %}
 
 package:
   name: regex
@@ -6,7 +6,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/r/regex/regex-{{ version }}.tar.gz
-  sha256: 720e34a539a76a1fedcebe4397290604cc2bdf6f81eca44adb9fb2ea071c0c69
+  sha256: 77a3799152951d6d14ae5720ca162c97c64f85d4755da585418eac216b736cad
 
 build:
   number: 0
