@@ -28,9 +28,10 @@ test:
 
 about:
   home: https://bitbucket.org/mrabarnett/mrab-regex
+  # https://bitbucket.org/mrabarnett/mrab-regex/issues/124/please-add-a-license-file-to-the-package
   license: Python-2.0
   license_family: PSF
-  summary: 'Alternative regular expression module, to replace re.'
+  summary: 'Alternative regular expression module, to replace re'
 
 extra:
   recipe-maintainers:
