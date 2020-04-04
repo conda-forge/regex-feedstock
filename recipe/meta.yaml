@@ -1,4 +1,4 @@
-{% set version = "2020.2.20" %}
+{% set version = "2020.4.4" %}
 
 package:
   name: regex
@@ -6,12 +6,12 @@ package:
 
 source:
   url: https://pypi.io/packages/source/r/regex/regex-{{ version }}.tar.gz
-  sha256: 9e9624440d754733eddbcd4614378c18713d2d9d0dc647cf9c72f64e39671be5
+  sha256: 295badf61a51add2d428a46b8580309c520d8b26e769868b922750cf3ce67142
 
 build:
-  number: 1
-  skip: True  # [win and py27]
-  script: "{{ PYTHON }} -m pip install . --no-deps -vv"
+  number: 0
+  skip: true  # [win and py27]
+  script: {{ PYTHON }} -m pip install . --no-deps -vv
 
 requirements:
   build:
@@ -31,7 +31,7 @@ about:
   # https://bitbucket.org/mrabarnett/mrab-regex/issues/124/please-add-a-license-file-to-the-package
   license: Python-2.0
   license_family: PSF
-  summary: 'Alternative regular expression module, to replace re'
+  summary: Alternative regular expression module, to replace re
 
 extra:
   recipe-maintainers:
