@@ -1,4 +1,4 @@
-{% set version = "2024.4.16" %}
+{% set version = "2024.4.28" %}
 
 package:
   name: regex
@@ -6,7 +6,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/r/regex/regex-{{ version }}.tar.gz
-  sha256: fa454d26f2e87ad661c4f0c5a5fe4cf6aab1e307d1b94f16ffdfcb089ba685c0
+  sha256: 83ab366777ea45d58f72593adf35d36ca911ea8bd838483c1823b883a121b0e4
 
 build:
   number: 0
@@ -17,6 +17,7 @@ requirements:
     - python                                 # [build_platform != target_platform]
     - cross-python_{{ target_platform }}     # [build_platform != target_platform]
     - {{ compiler('c') }}
+    - {{ stdlib("c") }}
   host:
     - python
     - pip
