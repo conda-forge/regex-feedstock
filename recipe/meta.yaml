@@ -1,12 +1,12 @@
-{% set version = "2025.9.18" %}
+{% set version = "2025.10.22" %}
 
 package:
   name: regex
   version: {{ version }}
 
 source:
-  url: https://files.pythonhosted.org/packages/49/d3/eaa0d28aba6ad1827ad1e716d9a93e1ba963ada61887498297d3da715133/regex-{{ version }}.tar.gz
-  sha256: c5ba23274c61c6fef447ba6a39333297d0c247f53059dba0bca415cac511edc4
+  url: https://files.pythonhosted.org/packages/90/f2/97d95db85e11cc85f97581cfc8b4a0405c7fb6099003c23ffaaa0cb4f31d/regex-{{ version }}.tar.gz
+  sha256: cc50db098b9d678ace33176a3ab4099616726ae4680fee6ac292302e8950fc4c
 
 build:
   number: 0
