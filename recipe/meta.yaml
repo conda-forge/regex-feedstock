@@ -1,26 +1,27 @@
+{% set name = "regex" %}
 {% set version = "2025.10.23" %}
 
 package:
-  name: regex
+  name: {{ name|lower }}
   version: {{ version }}
 
 source:
-  url: https://files.pythonhosted.org/packages/f8/c8/1d2160d36b11fbe0a61acb7c3c81ab032d9ec8ad888ac9e0a61b85ab99dd/regex-{{ version }}.tar.gz
+  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/regex-{{ version }}.tar.gz
   sha256: 8cbaf8ceb88f96ae2356d01b9adf5e6306fa42fa6f7eab6b97794e37c959ac26
 
 build:
   number: 0
-  script: {{ PYTHON }} -m pip install . -vv
+  script: {{ PYTHON }} -m pip install . -vv --no-deps --no-build-isolation
 
 requirements:
   build:
     - python                                 # [build_platform != target_platform]
     - cross-python_{{ target_platform }}     # [build_platform != target_platform]
     - {{ compiler('c') }}
-    - {{ stdlib("c") }}
+    - {{ stdlib('c') }}
   host:
     - python
-    - setuptools
+    - setuptools >77.0.3
     - pip
   run:
     - python
@@ -28,11 +29,14 @@ requirements:
 test:
   imports:
     - regex
+  commands:
+    - pip check
+  requires:
+    - pip
 
 about:
-  home: https://bitbucket.org/mrabarnett/mrab-regex
-  # https://bitbucket.org/mrabarnett/mrab-regex/issues/124/please-add-a-license-file-to-the-package
-  license: Python-2.0
+  home: https://github.com/mrabarnett/mrab-regex
+  license: Apache-2.0 AND CNRI-Python
   license_file: LICENSE.txt
   license_family: PSF
   summary: Alternative regular expression module, to replace re
