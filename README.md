@@ -3,9 +3,9 @@ About regex-feedstock
 
 Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/regex-feedstock/blob/main/LICENSE.txt)
 
-Home: https://bitbucket.org/mrabarnett/mrab-regex
+Home: https://github.com/mrabarnett/mrab-regex
 
-Package license: Python-2.0
+Package license: Apache-2.0 AND CNRI-Python
 
 Summary: Alternative regular expression module, to replace re
 
