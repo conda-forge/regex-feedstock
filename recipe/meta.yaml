@@ -1,5 +1,5 @@
 {% set name = "regex" %}
-{% set version = "2026.1.14" %}
+{% set version = "2026.1.15" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/regex-{{ version }}.tar.gz
-  sha256: 7bdd569b6226498001619751abe6ba3c9e3050f79cfe097e84f25b2856120e78
+  sha256: 164759aa25575cbc0651bef59a0b18353e54300d79ace8084c818ad8ac72b7d5
 
 build:
   number: 0
