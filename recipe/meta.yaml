@@ -1,5 +1,5 @@
 {% set name = "regex" %}
-{% set version = "2026.9.3" %}
+{% set version = "2026.9.10" %}
 
 package:
   name: {{ name|lower }}
@@ -7,10 +7,10 @@ package:
 
 source:
   url: https://files.pythonhosted.org/packages/source/{{ name[0] }}/{{ name }}/regex-{{ version }}.tar.gz
-  sha256: aabd43208e335f4c3f0b56de3464b066dd425983a58f6eeb5738bcd7465403db
+  sha256: 1e321e2c84f0e52c457f5ea5944f796d6e8e09cb99738ea98dcc1bfe402a128d
 
 build:
-  number: 1
+  number: 0
   script: {{ PYTHON }} -m pip install . -vv --no-deps --no-build-isolation
 
 requirements:
