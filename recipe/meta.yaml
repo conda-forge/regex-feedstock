@@ -1,13 +1,13 @@
 {% set name = "regex" %}
-{% set version = "2026.11.19" %}
+{% set version = "2026.11.23" %}
 
 package:
   name: {{ name|lower }}
   version: {{ version }}
 
 source:
-  url: https://files.pythonhosted.org/packages/b8/17/ef8c46a9e7cf2304968eb260f594bbd4220fab6281e64c090cdd85884511/regex-{{ version }}.tar.gz
-  sha256: 2826a006b68acfd3ed5074433caafe21d7f9d026eb82cb856724a4a893a70915
+  url: https://files.pythonhosted.org/packages/33/ad/49412041262da587f74bdd0025ccf951efed14b5857ef1d6385298923a83/regex-{{ version }}.tar.gz
+  sha256: f933202c64dca184b783e1c97922170bb167146faa120476a310e90d0701a915
 
 build:
   number: 0
