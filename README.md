@@ -5,9 +5,9 @@ Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/regex-feedstock
 
 Home: https://github.com/mrabarnett/mrab-regex
 
-Package license: Apache-2.0 AND CNRI-Python
+Package license: Apache-2.0
 
-Summary: Alternative regular expression module, to replace re
+Summary: Alternative regular expression module, to replace re.
 
 Current build status
 ====================
