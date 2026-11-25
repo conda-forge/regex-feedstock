@@ -1,0 +1,49 @@
+schema_version: 1
+
+context:
+  version: "2026.11.24"
+
+package:
+  name: regex
+  version: ${{ version }}
+
+source:
+  url: https://files.pythonhosted.org/packages/source/r/regex/regex-${{ version }}.tar.gz
+  sha256: 07f222de81cdcfd39eef8671e92d14f50f61f1666f756659b0e649cf700b1b10
+
+build:
+  number: 0
+  script: ${{ PYTHON }} -m pip install . -vv
+
+requirements:
+  build:
+    - if: build_platform != target_platform
+      then:
+        - python
+        - cross-python_${{ target_platform }}
+    - ${{ compiler('c') }}
+    - ${{ stdlib('c') }}
+  host:
+    - python
+    - setuptools >77.0.3
+    - pip
+  run:
+    - python
+
+tests:
+  - python:
+      imports:
+        - regex
+      pip_check: true
+
+about:
+  summary: Alternative regular expression module, to replace re.
+  license: Apache-2.0
+  license_file: LICENSE.txt
+  homepage: https://github.com/mrabarnett/mrab-regex
+
+extra:
+  recipe-maintainers:
+    - kwilcox
+    - ocefpaf
+    - xhochy
