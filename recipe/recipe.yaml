@@ -19,7 +19,7 @@ requirements:
   build:
     - if: build_platform != target_platform
       then:
-        - python ${{ python_min }}.*
+        - python
         - cross-python_${{ target_platform }}
     - ${{ compiler('c') }}
     - ${{ stdlib('c') }}
