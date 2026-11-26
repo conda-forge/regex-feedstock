@@ -1,7 +1,7 @@
 schema_version: 1
 
 context:
-  version: "2026.11.24"
+  version: "2026.11.25"
 
 package:
   name: regex
@@ -9,7 +9,7 @@ package:
 
 source:
   url: https://files.pythonhosted.org/packages/source/r/regex/regex-${{ version }}.tar.gz
-  sha256: 07f222de81cdcfd39eef8671e92d14f50f61f1666f756659b0e649cf700b1b10
+  sha256: d3ea8d9698f13f3fd08c65f9bed0bb07bcfff80b61dfa14d86b8cc398f886588
 
 build:
   number: 0
